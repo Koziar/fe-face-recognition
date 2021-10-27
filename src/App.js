@@ -1,11 +1,8 @@
-import Navigation from './components/Navigation/Navigation';
-import Logo from './components/Logo/Logo';
-import Rank from './components/Rank/Rank';
-import ImageURLForm from './components/ImageURLForm/ImageURLForm';
-import FaceRecognition from './components/FaceRecognition/FaceRecognition';
-import Particles from 'react-particles-js';
-import './App.css';
 import { Component } from 'react';
+import Particles from 'react-particles-js';
+import { Navigation, Logo, Rank, ImageURLForm, FaceRecognition, SignIn } from './components';
+
+import './App.css';
 
 const particlesParams = {
     particles: {
@@ -102,6 +99,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Particles className="particles" params={particlesParams} />
+                <SignIn />
                 <header className="App-header">
                     <Navigation />
                     <Logo />
